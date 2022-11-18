@@ -61,7 +61,7 @@ string dirCheck(vector<string> p,vector<string> c){
         }
         if(*i=="") continue;
         if(!isin(p,*i) && *i != ".."){
-            temp.insert(te,p.end(),*i);
+            temp.insert(temp.end(),*i);
         }else if(!isin(p,*i) && *i == ".."){
             temp.erase(temp.end());
         }
